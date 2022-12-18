@@ -1,0 +1,53 @@
+[marketcoli.ddl] 수정사항 _06.30
+1)  '_table' 삭제하는게 어떤지 -> 반영완료
+
+User -> Userinfo ('User'가 존재)
+
+Order_Item -> orders (수정)
+Od -> orderdetail (수정)
+
+2) notice : n_no -> (PK, auto-increment)추가
+3) product: p_name -> defalut null 삭제, not null추가
+-> UQ 추가필요 없음
+
+4) [order]-o_state : default 30(X) , not null (변경 필요)
+
+5) d_fee -> default 3000 추가
+
+6) 테이블명에 대문자 -> 소문자로 변경
+
+***참고사항
+
+[marketcoli.ddl] 과 [marketcoli_create_drop.sql]는 파일명, 확장자만 변경하였습니다.
+
+
+**공주<수정내용>
+userinfo_update_delete_selete
+비밀번호 찾기
+u_name, u_mail --> u_id, u_email
+수정완료
+
+userinfo_insert
+userinfo_update_delete_selete
+notice_insert
+notice_update_delete_selete
+
+marketcoli_create_drop.sql
+80번 행
+n_tite --> n_title
+수정 후 실행 부탁드립니다람쥐
+
+User_Table 수정
+
+u_name VARCHAR2(15) --> VARCHAR2(50)
+u_birth VARCHAR2(20) --> NUMBER(8)
+u_phone VARCHAR2(20) --> NUMBER(11)
+
+**쏘<수정내용>
+create_drop 파일에 product 테이블 구간
+p_category_s     NUMBER(10)   NULL 
+-> p_category_s VARCHAR2(50)  NULL
+
+**성윤<수정내용>
+ALTER TABLE Inquiry_Table ADD CONSTRAINT IDX_Inquiry_Table_1 UNIQUE (u_id);
+ALTER TABLE Inquiry_Table ADD CONSTRAINT IDX_Inquiry_Table_FK0 FOREIGN KEY (u_id) REFERENCES User_Table (u_id);

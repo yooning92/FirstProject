@@ -1,0 +1,20 @@
+DB URL   : jdbc:oracle:thin:@182.237.126.19:1521:XE
+
+<<<<<< SQLDeveloper >>>>>>
+
+호스트이름  : 182.237.126.19
+포트	    : 1521
+SID         : XE
+ 	
+<<team1>>
+아이디	: J2205JDEVELOPER#TEAM1
+패쓰워드: J2205JDEVELOPER#TEAM1
+<<team2>>
+아이디	: J2205JDEVELOPER#TEAM2
+패쓰워드: J2205JDEVELOPER#TEAM2
+<<team3>> - MarketColi
+아이디	: J2205JDEVELOPER#TEAM3
+패쓰워드: J2205JDEVELOPER#TEAM3
+<<team4>>
+아이디	: J2205JDEVELOPER#TEAM4
+패쓰워드: J2205JDEVELOPER#TEAM4
